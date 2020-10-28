@@ -43,14 +43,18 @@ z-index: 6;
   width: 100%;
   height: 100%;
   font-family: "Cabin", sans-serif;
-  background: linear-gradient(to right, #193d80, #072733, #020607);
+  background: linear-gradient(to right, #193d80, #07212b, #020607);
+}
+
+.row.home {
+  margin-bottom: 5rem;
 }
 
 .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
 }
@@ -112,7 +116,7 @@ z-index: 6;
   }
 }
 
-#sidebar > .bottom-sidebar > .btn {
+#sidebar > .bottom-sidebar > div .btn {
   border-radius: 500px;
   text-transform: uppercase;
   font-weight: 800;
@@ -186,7 +190,6 @@ z-index: 6;
 
 .sidebar-links {
   color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
 }
 .navigation-item svg {
   color: white;
@@ -199,4 +202,33 @@ z-index: 6;
 
 .artist {
   background-color: #000000;
+}
+
+#tracklist {
+  color: white;
+  background-image: linear-gradient(
+    270deg,
+    #000000,
+    #131313,
+    #1f1f1f,
+    #222121,
+    #333333
+  );
+}
+
+#artist-page {
+  background: rgb(70, 70, 70);
+  background: linear-gradient(162deg, rgb(44, 44, 44) 0%, rgb(19, 19, 19) 40%);
+}
+
+.row.artist {
+  margin-bottom: 5rem;
+}
+
+.row.tracks {
+  margin-bottom: 7rem;
+}
+
+.sidebar-install-app {
+  color: white;
 }
