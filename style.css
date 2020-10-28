@@ -82,7 +82,7 @@
   }
 }
 
-#sidebar > .bottom-sidebar > .btn {
+#sidebar > .bottom-sidebar > div .btn {
   border-radius: 500px;
   text-transform: uppercase;
   font-weight: 800;
@@ -180,11 +180,15 @@
 
 #artist-page {
   background: rgb(70, 70, 70);
-  background: linear-gradient(162deg, rgb(44, 44, 44) 0%, rgb(31, 31, 31) 40%);
+  background: linear-gradient(162deg, rgb(44, 44, 44) 0%, rgb(19, 19, 19) 40%);
 }
 
 .row.artist {
   margin-bottom: 5rem;
+}
+
+.row.tracks {
+  margin-bottom: 7rem;
 }
 
 .sidebar-install-app {
