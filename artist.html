@@ -16,13 +16,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" />
 
-    <title>Artist</title>
+    <title>Strivify - Artist</title>
   </head>
-  <body>
+  <body id="artist-page">
     <div class="container-fluid main">
+      <div id="show_bg">
+        <div class="container title-block">
+          <div class="row justify-content-center">
+            <div class="col-xs-12">
+              heloojhghbvhjyvjhvjhv
+              <div class="row justify-content-center">
+                <h6> 21,312,676 monthly listeners </h6>
+              </div>
+              <div class="row justify-content-center">
+                <h1>Linkin Park</h1>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <button class="title-bk-btn btn-green btn-play "> play </button>
+                </div>
+                <div class="col-4">
+                  <button class="title-bk-btn btn-follow btn-outline-secondary"> follow </button>
+                </div>
+                <div class="col-4">
+                <button class="title-bk-btn btn-circular"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row artist">
-        <div class="col col-2 sidebar">
+        <div class="col-12 d-flex justify-content-center">
           <!-- sidebar -->
           <div class="sidebar-sticky">
             <div
@@ -99,15 +127,232 @@
                 </div>
               </div>
               <div class="bottom-sidebar p-4">
-                <div class="btn btn-block btn-outline-light">Sign up</div>
-                <div class="btn btn-block btn-outline-light mb-3">Login</div>
-                <p class="small text-center text-secondary">
-                  Cookie | Privacy | Policy
+                <p class="small text-center text-white">
+                  <ion-icon class="sidebar-install-app my-auto mr-3" name="arrow-down-circle-outline"></ion-icon>
+                  Install App
                 </p>
+                <hr style="width: 80%; background-color:grey; margin: 0 auto;">
               </div>
             </div>
           </div>
+          <div class ="col col-10" id="content">
+            <!-- all the main content -->
+            <nav class="navbar navbar-expand navbar-dark mt-5">
+          
+              <div class="collapse navbar-collapse mb-4" id="navbarText">
+                <ul class="navbar-nav navbar-center">
+                  <li class="nav-item active mx-3">
+                    <a class="nav-link active" href="#"
+                      >OVERVIEW <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item mx-4 d-md-block">
+                    <a class="nav-link" href="#">RELATED ARTISTS</a>
+                  </li>
+                  <li class="nav-item mx-4 d-none d-md-block">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </nav>
+          
+        <div class="container throwback mt-5 px-0">
+        <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">Albums</h1>    
+        <div class="row mt-3">
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Hybrid Theory (20th anniversary edition)
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/one-more-light-live.jpeg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              One More Light Live
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/one-more-light.jpg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-3"
+            >
+              One More Light
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/thp-acapellas.jpg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-3"
+            >
+              The Hunting Party: Acapellas + Instrumentals
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/recharged.jpg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-3"
+            >
+              Recharged
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+            <img style="width: 100%" src="./artist-page/the-hunting-party.jpg" alt="" />
+            <h6
+              style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+              class="text-center mt-2 text-white px-3"
+            >
+              The Hunting Party
+            </h6>
+            <h6
+              style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+              class="text-center mt-2 text-white px-4"
+            >
+              Linkin Park
+            </h6>
+          </div>
+          
+          
         </div>
+     </div>
+ 
+      <!--------------CLASSIFICHE------------------>
+        <div class="container classifiche mt-5 mb-5 px-0">
+          <div class="row mt-3">
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Living things: Acapellas and Instrumentals
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Living things
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/minutes-to-midnight.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-3"
+              >
+                Minutes To Midnight
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/meteora.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-3"
+              >
+                Meteora
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/thousand-suns.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-3"
+              >
+                A Thousand Suns
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
+              <h6
+                style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
+                class="text-center mt-2 text-white px-3"
+              >
+                Hybrid Theory
+              </h6>
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Linkin Park
+              </h6>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+        <!-----------------MUSIC PLAYER----------------->
         <div
           class="fixed-bottom mt-5"
           style="background-color: rgb(66, 66, 66)"

@@ -6,7 +6,36 @@
   box-sizing: border-box;
 }
 
-body {
+/* background styling */
+
+#show_bg::after {
+background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(75,75,75,1) 100%);
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+}
+
+#show_bg{
+background-image: url("./album-page/");
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.title-block {
+  max-width: 380px;
+  position: relative;
+  top: 45%;
+}
+
+#home-page {
   width: 100%;
   height: 100%;
   font-family: "Cabin", sans-serif;
@@ -54,6 +83,7 @@ body {
 
 #sidebar {
   position: fixed;
+  top: 0;
   left: 0;
   width: 12vw;
   height: 91vh !important;
