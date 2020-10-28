@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <title>Strivify</title>
+    <title>Strivify - Home Page</title>
   </head>
-  <body>
+  <body id="home-page">
 
     <div class="container-fluid main">
-      <div class='row album'>
-        <div class ="col col-2 sidebar">
+      <div class="row home">
+        <div class="col-12 d-flex justify-content-center">
           <!-- sidebar -->
           <div class="sidebar-sticky">
             <div
@@ -33,8 +33,9 @@
             >
               <div class="top-sidebar">
                 <div class="logo p-4">
-                  <img class="img-fluid"
-                    src="./album-page/logo-white.png"
+                  <img
+                    class="img-fluid"
+                    src="./artist-page/logo-white.png"
                     height="40"
                   />
                 </div>
@@ -100,178 +101,209 @@
                 </div>
               </div>
               <div class="bottom-sidebar p-4">
-                <div
-                  class="btn btn-block btn-outline-light"
-                >
-                  Sign up
-                </div>
-                <div
-                  class="btn btn-block btn-outline-light mb-3"
-                >
-                  Login
-                </div>
+                <div><a class="btn btn-block btn-outline-light mb-2" href="login.html">Sign up</a> </div>
+                <div><a class="btn btn-block btn-outline-light mb-3" href="login.html">Login</a> </div>
                 <p class="small text-center text-secondary">
                   Cookie | Privacy | Policy
                 </p>
               </div>
             </div>
           </div>
-        </div>
-     
-        <div class =" col col-10">
-          <!-- all the main content -->
-          <nav class="navbar navbar-expand navbar-dark mt-5">
-        
-            <div class="collapse navbar-collapse mb-4" id="navbarText">
-              <ul class="navbar-nav navbar-center">
-                <li class="nav-item active mx-3">
-                  <a class="nav-link active" href="#"
-                    >TRENDING <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item mx-4 d-md-block">
-                  <a class="nav-link" href="#">PODCAST</a>
-                </li>
-                <li class="nav-item mx-4 d-none d-md-block">
-                  <a class="nav-link" href="#">MOODS AND GENRES</a>
-                </li>
-                <li class="nav-item mx-4 d-none d-md-block">
-                  <a class="nav-link" href="#">NEW RELEASES</a>
-                </li>
-                <li class="nav-item mx-4 d-none d-md-block">
-                  <a class="nav-link" href="#">DISCOVER</a>
-                </li>
-                <div class="dropdown">
-                  <button class="btn  dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MORE
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">MOODS AND GENRES</a>
-                    <a class="dropdown-item" href="#">NEW RELEASES</a>
-                    <a class="dropdown-item" href="#">DISCOVER</a>
-                  </div>
-                </div>
-              </ul>
+          <div class ="col col-10">
+            <!-- all the main content -->
+            <nav class="navbar navbar-expand navbar-dark mt-5">
+              <div class="collapse navbar-collapse mb-4" id="navbarText">
+                <ul class="navbar-nav navbar-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"
+                      >TRENDING <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item mx-4 d-md-block">
+                    <a class="nav-link" href="#">PODCAST</a>
+                  </li>
+                  <li class="nav-item mx-4 d-none d-md-block">
+                    <a class="nav-link" href="#">MOODS AND GENRES</a>
+                  </li>
+                  <li class="nav-item mx-4 d-none d-md-block">
+                    <a class="nav-link" href="#">NEW RELEASES</a>
+                  </li>
+                  <li class="nav-item mx-4 d-none d-md-block">
+                    <a class="nav-link" href="#">DISCOVER</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </nav>
+          
+          <div class="container throwback mt-5 px-0">
+          <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">Albums</h1>    
+          <div class="row mt-3">
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Karaoke
+              </h6>
             </div>
-          </nav>
-        <div class="container throwback mt-5 px-0">
-        <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">#THROWBACKTHURSDAY</h1>    
-        <div class="row mt-3">
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white px-4"
-            >
-              Italian Karaoke
-            </h6>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Lyricists
-            </h6>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Italy's Frequent Rotation
-            </h6>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              00s Italy
-            </h6>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Cocktail Hour
-            </h6>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
-            <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              I Love My 90's Hip-Hop
-            </h6>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Liricisti
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Italy's Frequent rotations
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                00s Italy
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Cocktail Hour
+              </h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+              <h6
+                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                I Love My 90's Hip-Hop
+              </h6>
+            </div>
           </div>
         </div>
-     </div>
-    
-    <!--------------CLASSIFICHE------------------>
+      
+      <!--------------CLASSIFICHE------------------>
       <div class="container classifiche mt-5 mb-5 px-0">
-        <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem;">Classifiche</h1>
-        <div class="row mt-3">
-            <div class="col-lg-2 col-md-6 col-sm-6 px-2">
-                <img style="width: 100%" src="./home-page/top-50.jpg" alt="">
-                <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-                class="text-center mt-2 text-white"
+        <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche</h1>    
+          <div class="row mt-3">
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+              
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
               >
                 Top 50 - Italy
               </h6>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 px-2">
-                <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="">
-                <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Top 50 - Global
-            </h6>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+              
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Top 50 - Global
+              </h6>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 px-2">
-                <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="">
-                <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Viral 50 - Global
-            </h6>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+              
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Viral 50 - Global
+              </h6>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 px-2">
-                <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="">
-                <h6
-              style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06rem;""
-              class="text-center mt-2 text-white"
-            >
-              Top 50 - Italy
-            </h6>
-            </div>
-        </div>
-       </div>
-       </div>
-      </div>
-
-      <!-----------------MUSIC PLAYER----------------->
-      <div class="fixed-bottom mt-5" style="background-color: rgb(66, 66, 66);">
-          <div class="d-flex justify-content-center align-items-center">   
-              <div class="buttons mt-3"> 
-                <ion-icon style="color: rgb(199, 199, 199); width: 1.5rem; height: 1.2rem; margin: 0.4rem 0.8rem;" name="shuffle-outline"></ion-icon>
-                <ion-icon style="color: rgb(199, 199, 199); width: 1.3rem; margin: 0.6rem auto;" name="play-skip-back"></ion-icon>
-                <ion-icon style="color:rgb(199, 199, 199); width: 1.8rem; height: 2.2rem; margin: auto 0.8rem;" name="play-circle-outline"></ion-icon> 
-                <ion-icon style="color: rgb(199, 199, 199); width: 1.3rem; margin: 0.6rem auto;" name="play-skip-forward"></ion-icon>
-                <ion-icon style="color: rgb(199, 199, 199); width: 1.5rem; height: 1.2rem; margin: 0.4rem 0.8rem;" name="repeat-outline"></ion-icon>
-              </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+              <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+              
+              <h6
+                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
+                class="text-center mt-2 text-white px-4"
+              >
+                Viral 50 - Italy
+              </h6>
+            </div> 
           </div>
-          <hr style= "width: 35vw; height: 0.2rem; background-color: grey; opacity: 0.5;" class="mx-auto rounded"  >
-      </div>
+        </div>
+        <!-----------------MUSIC PLAYER----------------->
+        <div
+          class="fixed-bottom mt-5"
+          style="background-color: rgb(66, 66, 66)"
+        >
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="buttons mt-3">
+              <ion-icon
+                style="
+                  color: rgb(199, 199, 199);
+                  width: 1.5rem;
+                  height: 1.2rem;
+                  margin: 0.4rem 0.8rem;
+                "
+                name="shuffle-outline"
+              ></ion-icon>
+              <ion-icon
+                style="
+                  color: rgb(199, 199, 199);
+                  width: 1.3rem;
+                  margin: 0.6rem auto;
+                "
+                name="play-skip-back"
+              ></ion-icon>
+              <ion-icon
+                style="
+                  color: rgb(199, 199, 199);
+                  width: 1.8rem;
+                  height: 2.2rem;
+                  margin: auto 0.8rem;
+                "
+                name="play-circle-outline"
+              ></ion-icon>
+              <ion-icon
+                style="
+                  color: rgb(199, 199, 199);
+                  width: 1.3rem;
+                  margin: 0.6rem auto;
+                "
+                name="play-skip-forward"
+              ></ion-icon>
+              <ion-icon
+                style="
+                  color: rgb(199, 199, 199);
+                  width: 1.5rem;
+                  height: 1.2rem;
+                  margin: 0.4rem 0.8rem;
+                "
+                name="repeat-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <hr
+            style="
+              width: 35vw;
+              height: 0.2rem;
+              background-color: grey;
+              opacity: 0.5;
+            "
+            class="mx-auto rounded"
+          />
+        </div>
     </div>
     <!---------------------------SCRIPTS-------------------------------->
     <script
