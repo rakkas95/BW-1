@@ -6,22 +6,26 @@
   box-sizing: border-box;
 }
 
-/* background styling */
+/* USE THE ARTIST PAGE ID */
 
-.main::before {
+/* .main::before {
   content: "";
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-position: absolute;
-top: 100px;
-right: 0;
-left: 0;
-bottom: 0;
-height: 200px;
-z-index: 6;
-}
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  z-index: 6;
+} */
 
-.main{
+/* .main{
   background-image: url(./artist-page/linkin-banner-image.jpg);
   width: 100%;
   height: 300px;
@@ -30,8 +34,7 @@ z-index: 6;
   background-position: center;
   background-size: cover;
   position: relative;
-}
-
+} */
 
 .title-block {
   max-width: 380px;
