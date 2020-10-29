@@ -141,6 +141,10 @@
                   Install App
                 </p>
                 <hr style="width: 80%; background-color:grey; margin: 0 auto;">
+                <p class="small text-center text-white font-weight-bold">
+                  <ion-icon class="mr-3" name="person-circle-outline"></ion-icon>
+                  RabeAlan
+                </p>
               </div>
             </div>
           </div>
@@ -244,7 +248,7 @@
         </div>
      </div>
  
-      <!--------------CLASSIFICHE------------------>
+      <!--------------2N ROW ALBUMS------------------>
         <div class="container classifiche mt-5 mb-5 px-0">
           <div class="row mt-3">
             <div class="col-lg-2 col-md-4 col-sm-6 px-2">
@@ -344,64 +348,49 @@
         <!-----------------MUSIC PLAYER----------------->
         <div
           class="fixed-bottom mt-5"
-          style="background-color: rgb(66, 66, 66)"
+          style="background-color: rgb(51, 51, 51)"
         >
           <div class="d-flex justify-content-center align-items-center">
             <div class="buttons mt-3">
               <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.5rem;
-                  height: 1.2rem;
-                  margin: 0.4rem 0.8rem;
-                "
+              class="icons-player"
                 name="shuffle-outline"
               ></ion-icon>
               <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.3rem;
-                  margin: 0.6rem auto;
-                "
+              class="icons-player"
                 name="play-skip-back"
               ></ion-icon>
               <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.8rem;
-                  height: 2.2rem;
-                  margin: auto 0.8rem;
-                "
+              class="icons-player"
+              id="play-button"
                 name="play-circle-outline"
               ></ion-icon>
               <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.3rem;
-                  margin: 0.6rem auto;
-                "
+              class="icons-player"
                 name="play-skip-forward"
               ></ion-icon>
               <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.5rem;
-                  height: 1.2rem;
-                  margin: 0.4rem 0.8rem;
-                "
+              class="icons-player"
                 name="repeat-outline"
               ></ion-icon>
             </div>
+            <div class="right buttons">
+              <ion-icon name="list-outline"></ion-icon>
+            </div>
           </div>
-          <hr
+          <div class="track-bar">
+            
+            <hr 
             style="
               width: 35vw;
               height: 0.2rem;
               background-color: grey;
               opacity: 0.5;
-            "
+              "
             class="mx-auto rounded"
-          />
+            />
+            
+          </div>
         </div>
       </div>
     </div>
