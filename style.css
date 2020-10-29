@@ -231,3 +231,24 @@
 .sidebar-install-app {
   color: white;
 }
+
+.icons-player {
+  color: rgb(199, 199, 199);
+  width: 1rem;
+  height: 2rem;
+  margin: 0.4rem 0.8rem;
+}
+
+#play-button {
+  width: 1.8rem;
+  height: 2rem;
+}
+
+.buttons {
+  width: 30%%;
+}
+
+.right-buttons {
+  width: 30%;
+  margin-right: 20%;
+}
