@@ -247,53 +247,37 @@
           class="fixed-bottom mt-5"
           style="background-color: rgb(51, 51, 51)"
         >
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="buttons mt-3">
-              <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.5rem;
-                  height: 1.2rem;
-                  margin: 0.4rem 0.8rem;
-                "
-                name="shuffle-outline"
-              ></ion-icon>
-              <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.3rem;
-                  margin: 0.6rem auto;
-                "
-                name="play-skip-back"
-              ></ion-icon>
-              <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.8rem;
-                  height: 2.2rem;
-                  margin: auto 0.8rem;
-                "
-                name="play-circle-outline"
-              ></ion-icon>
-              <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.3rem;
-                  margin: 0.6rem auto;
-                "
-                name="play-skip-forward"
-              ></ion-icon>
-              <ion-icon
-                style="
-                  color: rgb(199, 199, 199);
-                  width: 1.5rem;
-                  height: 1.2rem;
-                  margin: 0.4rem 0.8rem;
-                "
-                name="repeat-outline"
-              ></ion-icon>
-            </div>
+        <div class="d-flex justify-content-between">
+          <div class="right buttons">
+            <ion-icon name="list-outline"></ion-icon>
           </div>
+          <div class="buttons mt-3">
+            <ion-icon
+            class="icons-player"
+              name="shuffle-outline"
+            ></ion-icon>
+            <ion-icon
+            class="icons-player"
+              name="play-skip-back"
+            ></ion-icon>
+            <ion-icon
+            class="icons-player"
+            id="play-button"
+              name="play-circle-outline"
+            ></ion-icon>
+            <ion-icon
+            class="icons-player"
+              name="play-skip-forward"
+            ></ion-icon>
+            <ion-icon
+            class="icons-player"
+              name="repeat-outline"
+            ></ion-icon>
+          </div>
+          <div class="right buttons">
+            <ion-icon name="list-outline"></ion-icon>
+          </div>
+        </div>
           <hr
             style="
               width: 35vw;
