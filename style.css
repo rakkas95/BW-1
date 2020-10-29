@@ -8,7 +8,7 @@
 
 /* USE THE ARTIST PAGE ID */
 
-/* .main::before {
+/* #show_bg::before {
   content: "";
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -23,9 +23,9 @@
   bottom: 0;
   height: 200px;
   z-index: 6;
-} */
+}
 
-/* .main{
+#show_bg {
   background-image: url(./artist-page/linkin-banner-image.jpg);
   width: 100%;
   height: 300px;
@@ -34,13 +34,13 @@
   background-position: center;
   background-size: cover;
   position: relative;
-} */
-
-.title-block {
+}
+*/
+/* .title-block {
   max-width: 380px;
   position: relative;
   top: 45%;
-}
+} */
 
 #home-page {
   width: 100%;
@@ -203,9 +203,9 @@
   box-shadow: 1px 1px 10px black;
 }
 
-.artist {
+/* .artist {
   background-color: #000000;
-}
+} */
 
 #tracklist {
   color: white;
