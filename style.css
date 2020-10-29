@@ -137,13 +137,32 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 #sidebar > .top-sidebar > .navigation > .navigation-item {
   padding-left: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
+  color: #b3b3b3;
+}
 
+.navigation-link:focus::after{
+  content: "";
+  display: inline-block; 
+  color: #fff;
+  border-left: 4px solid #1db954;
+  color: #fff;
+}
+
+.navigation-link:hover, .navigation-item:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation-link {
+  border-left: 4px solid transparent;
   color: #b3b3b3;
 }
 
 #sidebar > .top-sidebar > .navigation > .navigation-item > svg {
   margin-right: 1rem;
 }
+
 
 #sidebar > .top-sidebar > .navigation > .navigation-item.active {
   border-left: 4px solid #1db954;
