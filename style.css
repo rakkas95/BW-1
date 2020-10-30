@@ -202,6 +202,9 @@
   #artist-follow {
     display: none !important;
   }
+  #ellipsis {
+    display: none !important;
+  }
 }
 
 .dropdown-menu {
