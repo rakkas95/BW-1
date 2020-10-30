@@ -62,6 +62,12 @@
   margin-bottom: 5rem;
 }
 
+.navbar-expand .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: center;
+}
+
 .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
@@ -123,22 +129,21 @@
   .sidebar {
     display: none !important;
   }
-  .music-playing, .right {
-    display: none!important;
+  .music-playing,
+  .right {
+    display: none !important;
   }
-
 }
-
 
 @media (max-width: 690px) {
   .dropdown button {
     display: none !important;
     margin-bottom: 30px;
   }
-  .music-playing, .right {
-    display: none!important;
+  .music-playing,
+  .right {
+    display: none !important;
   }
-
 }
 
 .active-link {
