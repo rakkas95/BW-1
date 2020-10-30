@@ -10,19 +10,23 @@
 
 .main-artist::before {
   content: "";
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-position: absolute;
-top: 250px;
-right: 0;
-left: 0;
-bottom: 0;
-height: 350px;
-z-index: 6;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 250px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 350px;
+  z-index: 6;
 }
 
-.main-artist{
-background-image: url(./artist-page/linkin-banner-image.jpg);
+.main-artist {
+  background-image: url(./artist-page/linkin-banner-image.jpg);
   width: 100%;
   height: 600px;
   object-fit: cover;
@@ -32,7 +36,7 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   position: relative;
 }
 
-#bring-forward{
+#bring-forward {
   z-index: 10;
 }
 
@@ -135,14 +139,15 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   margin-bottom: 1rem;
   height: 20px;
   color: #b3b3b3;
-  }
+}
 
-.navigation-link:hover, .navigation-item:hover{
+.navigation-link:hover,
+.navigation-item:hover {
   color: #fff;
   text-decoration: none;
 }
 
-.navigation-item{
+.navigation-item {
   height: 30px;
 }
 
@@ -203,7 +208,6 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   color: rgba(255, 255, 255, 0.5);
 }
 
-
 #album-cover {
   width: 70%;
   box-shadow: 1px 1px 10px black;
@@ -222,7 +226,7 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 }
 
 #artist-page {
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
 }
 
 .row.artist {
@@ -249,25 +253,25 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   height: 2rem;
 }
 
-
 .right-buttons {
   width: 30%;
   margin-right: 20%;
 }
 
-#homepage-Login, #homepage-signUp {
+#homepage-Login,
+#homepage-signUp {
   border-radius: 500px;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1rem;
   border: 2px solid #fff;
   max-width: 100%;
-  height: 35px;   
+  height: 35px;
   position: relative;
   left: 0;
- display: flex;
- justify-content: center;
- align-items: center;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #homepage-signUp {
