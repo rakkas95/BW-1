@@ -68,6 +68,8 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   z-index: 10;
 }
 
+
+
 .nav-link {
   border-bottom: 3px solid transparent;
 }
@@ -117,7 +119,6 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   .sidebar {
     display: none !important;
   }
-}
 
 @media (min-width: 690px) {
   .dropdown button {
@@ -126,28 +127,14 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   }
 }
 
-#sidebar > .bottom-sidebar > div .btn {
-  border-radius: 500px;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1rem;
-  border-width: 2px;
+.active-link {
+  border-left: 4px solid #1db954;
 }
 
-#sidebar > .top-sidebar > .navigation > .navigation-item {
+.navigation-link {
   padding-left: 1rem;
   margin-bottom: 1rem;
-  cursor: pointer;
-  color: #b3b3b3;
-}
-
-.navigation-link:focus::after{
-  content: "";
-  display: inline-block; 
-  color: #fff;
-  border-left: 4px solid #1db954;
-  color: #fff;
-}
+  }
 
 .navigation-link:hover, .navigation-item:hover{
   color: #fff;
@@ -159,14 +146,9 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   color: #b3b3b3;
 }
 
-#sidebar > .top-sidebar > .navigation > .navigation-item > svg {
-  margin-right: 1rem;
-}
-
-
-#sidebar > .top-sidebar > .navigation > .navigation-item.active {
-  border-left: 4px solid #1db954;
+.navigation-link:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .btn-success {
