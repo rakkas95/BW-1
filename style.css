@@ -145,9 +145,6 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 .navigation-item{
   height: 30px;
 }
-.navigation-link {
-
-}
 
 .navigation-link:hover {
   color: #fff;
