@@ -133,6 +133,8 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 .navigation-link {
   padding-left: 1rem;
   margin-bottom: 1rem;
+  height: 20px;
+  color: #b3b3b3;
   }
 
 .navigation-link:hover, .navigation-item:hover{
@@ -140,8 +142,11 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   text-decoration: none;
 }
 
+.navigation-item{
+  height: 30px;
+}
 .navigation-link {
-  color: #b3b3b3;
+
 }
 
 .navigation-link:hover {
@@ -251,4 +256,24 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 .right-buttons {
   width: 30%;
   margin-right: 20%;
+}
+
+#homepage-Login, #homepage-signUp {
+  border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  max-width: 100%;
+  height: 35px;   
+  position: relative;
+  left: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;       
+}
+
+#homepage-signUp {
+  color: #000000;
+  background-color: #fff;
 }
