@@ -438,19 +438,9 @@ input:not(:placeholder-shown) {
 }
 
 img.images:hover {
-  border: 2px solid rgb(172, 172, 172);
+  box-shadow: 1px 1px 5px 5px rgb(36, 221, 92);
 }
 
-.items-container:hover .play {
+.items-container:hover {
   display: block;
-}
-.play {
-  position: absolute;
-  display: none;
-  top: 33%;
-  width: 40px;
-  margin: 0 auto;
-  left: 0px;
-  right: 0px;
-  z-index: 100;
 }
