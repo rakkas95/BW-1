@@ -76,8 +76,12 @@ body {
 }
 
 #h6-banner {
-  margin-top: 350px;
+  margin-top: 30%;
   margin-bottom: 0;
+}
+
+.btn-container {
+  margin-top: 5%;
 }
 
 #home-page {
@@ -104,7 +108,8 @@ body {
   font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
-  z-index: 10;
+  z-index: 7;
+  margin-top: 10%;
 }
 
 .nav-link {
@@ -229,7 +234,7 @@ body {
 }
 
 .text-muted {
-  color: #9e9e9e !important;
+  color: #b8b8b8 !important;
 }
 
 .track {
@@ -311,6 +316,10 @@ body {
 .right-buttons {
   width: 30%;
   margin-right: 20%;
+}
+
+#main-covers {
+  margin-top: 10%;
 }
 
 #homepage-Login,
