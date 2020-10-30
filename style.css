@@ -113,6 +113,7 @@
   width: 12vw;
   height: 91vh !important;
   background-color: #050505 !important;
+  z-index: 10;
 }
 
 @media (max-width: 960px) {
@@ -144,7 +145,26 @@
 #sidebar > .top-sidebar > .navigation > .navigation-item {
   padding-left: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
+  color: #b3b3b3;
+}
 
+.navigation-link:focus::after {
+  content: "";
+  display: inline-block;
+  color: #fff;
+  border-left: 4px solid #1db954;
+  color: #fff;
+}
+
+.navigation-link:hover,
+.navigation-item:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation-link {
+  border-left: 4px solid transparent;
   color: #b3b3b3;
 }
 
