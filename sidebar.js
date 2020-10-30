@@ -5,3 +5,15 @@ function activatedLink() {
     })
     event.currentTarget.classList.add("active-link")
 }
+
+// window.onload = function () {
+
+//     const links = document.querySelectorAll('#navbarText .nav-link')
+//     // console.log(links)
+//     for (let i = 0; i < links.length; i++) {
+//         links[i].addEventListener('click', () => {
+
+//             links[i].classList.remove('active')
+//         })
+//     }
+// }
