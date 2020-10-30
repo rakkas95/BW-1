@@ -415,8 +415,8 @@ input:not(:placeholder-shown) {
 }
 
 .search-item-img {
-  width: 19%;
-  height: 9vh;
+  width: 16%;
+  height: 7vh;
   border-radius: 50%;
 }
 
@@ -442,10 +442,15 @@ input:not(:placeholder-shown) {
   background-color: var(--color-dark);
 }
 
-img.images:hover {
-  box-shadow: 1px 1px 5px 5px rgb(36, 221, 76);
+img.images {
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
 }
 
-.items-container:hover {
+img.images:hover {
+  box-shadow: 1px 1px 5px 5px rgb(36, 221, 76);
   display: block;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
