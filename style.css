@@ -342,7 +342,7 @@ input:not(:placeholder-shown) {
 }
 
 .search-item-img {
-  width: 20%;
-  height: 8vh;
+  width: 19%;
+  height: 9vh;
   border-radius: 50%;
 }
