@@ -437,8 +437,13 @@ input:not(:placeholder-shown) {
   );
 }
 
+.search-item:hover {
+  background: rgb(114, 114, 114);
+  background-color: var(--color-dark);
+}
+
 img.images:hover {
-  box-shadow: 1px 1px 5px 5px rgb(36, 221, 92);
+  box-shadow: 1px 1px 5px 5px rgb(36, 221, 76);
 }
 
 .items-container:hover {
