@@ -68,8 +68,6 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   z-index: 10;
 }
 
-
-
 .nav-link {
   border-bottom: 3px solid transparent;
 }
@@ -104,7 +102,7 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   position: fixed;
   top: 0;
   left: 0;
-  width: 12vw;
+  width: 14vw;
   height: 91vh !important;
   background-color: #050505 !important;
   z-index: 10;
@@ -119,6 +117,7 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
   .sidebar {
     display: none !important;
   }
+}
 
 @media (min-width: 690px) {
   .dropdown button {
@@ -142,7 +141,6 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 }
 
 .navigation-link {
-  border-left: 4px solid transparent;
   color: #b3b3b3;
 }
 
@@ -202,9 +200,7 @@ background-image: url(./artist-page/linkin-banner-image.jpg);
 .sidebar-links {
   color: rgba(255, 255, 255, 0.5);
 }
-.navigation-item svg {
-  color: white;
-}
+
 
 #album-cover {
   width: 70%;
