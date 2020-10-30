@@ -6,6 +6,47 @@
   box-sizing: border-box;
 }
 
+/* USE THE ARTIST PAGE ID */
+
+.main-artist::before {
+  content: "";
+  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+position: absolute;
+top: 250px;
+right: 0;
+left: 0;
+bottom: 0;
+height: 350px;
+z-index: 6;
+}
+
+.main-artist{
+background-image: url(./artist-page/linkin-banner-image.jpg);
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#bring-forward{
+  z-index: 10;
+}
+
+.title-block {
+  max-width: 380px;
+  position: relative;
+  top: 45%;
+}
+
+#h6-banner {
+  margin-top: 350px;
+  margin-bottom: 0;
+}
+
 #home-page {
   width: 100%;
   height: 100%;
@@ -24,6 +65,7 @@
   font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
+  z-index: 10;
 }
 
 
@@ -60,10 +102,12 @@
 
 #sidebar {
   position: fixed;
+  top: 0;
   left: 0;
   width: 12vw;
   height: 91vh !important;
   background-color: #050505 !important;
+  z-index: 10;
 }
 
 @media (max-width: 960px) {
@@ -75,7 +119,6 @@
   .sidebar {
     display: none !important;
   }
-}
 
 @media (min-width: 690px) {
   .dropdown button {
@@ -84,57 +127,29 @@
   }
 }
 
-<<<<<<< Updated upstream
-#sidebar > .bottom-sidebar > .btn {
-  border-radius: 500px;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1rem;
-  border-width: 2px;
-=======
 .active-link {
   border-left: 4px solid #1db954;
->>>>>>> Stashed changes
 }
 
 .navigation-link {
   padding-left: 1rem;
   margin-bottom: 1rem;
-<<<<<<< Updated upstream
+  }
 
-  color: #b3b3b3;
-}
-
-#sidebar > .top-sidebar > .navigation > .navigation-item > svg {
-  margin-right: 1rem;
-}
-
-#sidebar > .top-sidebar > .navigation > .navigation-item.active {
-  border-left: 4px solid #1db954;
+.navigation-link:hover, .navigation-item:hover{
   color: #fff;
-}
-=======
-  cursor: pointer;
-  color: #b3b3b3;
+  text-decoration: none;
 }
 
-div img::before{
-  content: "";
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  background-color: rgba(0,0,0,0.4);
+.navigation-link {
+  border-left: 4px solid transparent;
+  color: #b3b3b3;
 }
 
 .navigation-link:hover {
   color: #fff;
   text-decoration: none;
 }
-
->>>>>>> Stashed changes
 
 .btn-success {
   font-size: 1rem;
@@ -209,14 +224,35 @@ div img::before{
 }
 
 #artist-page {
-  background: rgb(70, 70, 70);
-  background: linear-gradient(162deg, rgb(44, 44, 44) 0%, rgb(31, 31, 31) 40%);
+  background: rgb(0,0,0);
 }
 
 .row.artist {
   margin-bottom: 5rem;
 }
 
+.row.tracks {
+  margin-bottom: 7rem;
+}
+
 .sidebar-install-app {
   color: white;
+}
+
+.icons-player {
+  color: rgb(199, 199, 199);
+  width: 1rem;
+  height: 2rem;
+  margin: 0.4rem 0.8rem;
+}
+
+#play-button {
+  width: 1.8rem;
+  height: 2rem;
+}
+
+
+.right-buttons {
+  width: 30%;
+  margin-right: 20%;
 }
