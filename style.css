@@ -448,9 +448,25 @@ img.images {
 }
 
 img.images:hover {
-  box-shadow: 1px 1px 5px 5px rgb(36, 221, 76);
+  box-shadow: 1px 1px 5px 5px rgb(221, 110, 36);
   display: block;
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
+}
+
+main {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(1);
+  }
 }
