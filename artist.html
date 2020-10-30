@@ -38,6 +38,17 @@
                   <button class="btn btn-success mb-2 text-light ml-2" style="background: transparent; border-color: white;">...</button>
                 </div>
               </div>
+              <div class="row justify-content-center mb-3">
+                <div class="col-4 ">
+                  <button class="btn mb-2" id="artist-play">PLAY</button>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <button class="btn-block btn-outline-light mb-3" id="artist-follow"> follow </button>
+                </div>
+                <div class="col-4">
+                  <button class="btn-block btn-outline-light mb-3" id="ellipsis"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -64,78 +75,22 @@
         <div id="main-covers" class="col-12 d-flex justify-content-center pl-5">
           <!-- sidebar -->
           <div class="sidebar-sticky">
-            <div
-              class="d-flex flex-column justify-content-between p-0"
-              id="sidebar"
-            >
+            <div class="d-flex flex-column justify-content-between p-0" id="sidebar">
               <div class="top-sidebar">
                 <div class="logo p-4">
-                  <img
-                    class="img-fluid"
-                    src="./album-page/logo-white.png"
-                    height="40"
-                  />
+                  <img class="img-fluid" src="./artist-page/logo-white.png" height="40" />
                 </div>
-                <div class="navigation">
-                  <div class="navigation-item active">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-house-door-fill"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-                      />
-                    </svg>
-                    Home
-                  </div>
-                  <div class="navigation-item">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-search"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
-                      />
-                    </svg>
-                    Search
-                  </div>
-                  <div class="navigation-item">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-collection-fill"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
-                      />
-                    </svg>
-                    Your Library
-                  </div>
-                </div>
+                <ul class="navigation">
+                  <li class="navigation-item">
+                    <a class="navigation-link active-link" href="#" onclick="activatedLink()"><i id="home-icon" class="fas fa-home"></i> Home </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#" onclick="activatedLink()"><i id="search-icon" class="fas fa-search"></i> Search </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#" onclick="activatedLink()"><i id="library-icon" class="fas fa-book-open"></i> Your Library </a>
+                  </li>
+                </ul>
               </div>
               <div class="bottom-sidebar p-4">
                 <p class="small text-center text-white">
@@ -155,8 +110,8 @@
         <div class="container mt-5 px-0">
         <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">Albums</h1>    
         <div class="row mt-3">
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-4"
@@ -170,8 +125,8 @@
               Linkin Park
             </h6>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/one-more-light-live.jpeg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/one-more-light-live.jpeg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-4"
@@ -185,8 +140,8 @@
               Linkin Park
             </h6>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/one-more-light.jpg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/one-more-light.jpg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-3"
@@ -200,8 +155,8 @@
               Linkin Park
             </h6>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/thp-acapellas.jpg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/thp-acapellas.jpg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-3"
@@ -215,8 +170,8 @@
               Linkin Park
             </h6>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/recharged.jpg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/recharged.jpg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-3"
@@ -230,8 +185,8 @@
               Linkin Park
             </h6>
           </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-            <img style="width: 100%" src="./artist-page/the-hunting-party.jpg" alt="" />
+          <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+            <img class="images" style="width: 100%" src="./artist-page/the-hunting-party.jpg" alt="" />
             <h6
               style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
               class="text-center mt-2 text-white px-3"
@@ -251,8 +206,8 @@
         </div>
         <div class="container 2nd-albums-row mt-5 mb-5 px-0">
             <div class="row mt-3">
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-4"
@@ -266,8 +221,8 @@
                   Linkin Park
                 </h6>
               </div>
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/living-things.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-4"
@@ -281,8 +236,8 @@
                   Linkin Park
                 </h6>
               </div>
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/minutes-to-midnight.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/minutes-to-midnight.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-3"
@@ -296,8 +251,8 @@
                   Linkin Park
                 </h6>
               </div>
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/meteora.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/meteora.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-3"
@@ -311,8 +266,8 @@
                   Linkin Park
                 </h6>
               </div>
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/thousand-suns.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/thousand-suns.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-3"
@@ -326,8 +281,8 @@
                   Linkin Park
                 </h6>
               </div>
-              <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-                <img style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
+              <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                <img class="images" style="width: 100%" src="./artist-page/hybrid-theory.jpg" alt="" />
                 <h6
                   style="opacity: 2; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04rem;""
                   class="text-center mt-2 text-white px-3"
@@ -406,10 +361,12 @@
                 
               </div>
         </div>
+      </div>
+    </div>
     </div>  
       
     
-
+    <script src="sidebar.js"> </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

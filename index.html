@@ -1,249 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Strivify - Home Page</title>
-  </head>
-  <body id="home-page">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
+    integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
+    crossorigin="anonymous" />
 
-    <div class="container-fluid main">
-      <div class="row home">
-        <div class="col-12 d-flex justify-content-center pl-5">
-          <!-- sidebar -->
-          <div class="sidebar-sticky">
-            <div
-              class="d-flex flex-column justify-content-between p-0"
-              id="sidebar"
-            >
-              <div class="top-sidebar">
-                <div class="logo p-4">
-                  <img
-                    class="img-fluid"
-                    src="./artist-page/logo-white.png"
-                    height="40"
-                  />
-                </div>
-                <div class="navigation">
-                  <div class="navigation-item">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-house-door-fill"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-                      />
-                    </svg>
-                   <a class="navigation-link" href=""> Home </a> 
-                  </div>
-                  <div class="navigation-item">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-search"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
-                      />
-                    </svg>
-                    <a class="navigation-link" href=""> Search </a>
-                  </div>
-                  <div class="navigation-item">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="bi bi-collection-fill"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7z"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
-                      />
-                    </svg>
-                    <a class="navigation-link" href=""> Your Library </a>
-                  </div>
-                </div>
+
+  <title>Strivify - Home Page</title>
+</head>
+
+<body id="home-page">
+
+  <div class="container-fluid main">
+    <div class="row home">
+      <div class="col col-2 d-flex justify-content-center pl-5">
+        <!-- sidebar -->
+        <div class="sidebar-sticky">
+          <div class="d-flex flex-column justify-content-between p-0" id="sidebar">
+            <div class="top-sidebar">
+              <div class="logo p-4">
+                <img class="img-fluid" src="./artist-page/logo-white.png" height="40" />
               </div>
-              <div class="bottom-sidebar p-4">
-                <p class="small text-center text-white">
-                  <ion-icon class="sidebar-install-app my-auto mr-3" name="arrow-down-circle-outline"></ion-icon>
-                  Install App
-                </p>
-                <hr style="width: 80%; background-color:grey; margin: 0 auto;">
-                <p class="small text-center text-white font-weight-bold">
-                  <ion-icon class="mr-3" name="person-circle-outline"></ion-icon>
-                  RabeAlan
-                </p>
+              <ul class="navigation">
+                <li class="navigation-item">
+                  <a class="navigation-link active-link" href="index.html" onclick="activatedLink()"><i id="home-icon" class="fas fa-home"></i> Home </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="search.html" onclick="activatedLink()"><i id="search-icon" class="fas fa-search"></i> Search </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="library.html" onclick="activatedLink()"><i id="library-icon" class="fas fa-book-open"></i> Your Library </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom-sidebar p-4">
+              <div><a class=" btn-block btn-outline-light mb-2" id="homepage-signUp" href="login.html">Sign up</a>
               </div>
-            </div>
-          </div>
-          <div class ="col col-10">
-            <!-- all the main content -->
-            <nav class="navbar navbar-expand navbar-dark mt-5">
-              <div class="collapse navbar-collapse mb-4" id="navbarText">
-                <ul class="navbar-nav navbar-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#"
-                      >TRENDING <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item mx-4 d-md-block">
-                    <a class="nav-link" href="#">PODCAST</a>
-                  </li>
-                  <li class="nav-item mx-4 d-none d-md-block">
-                    <a class="nav-link" href="#">MOODS AND GENRES</a>
-                  </li>
-                  <li class="nav-item mx-4 d-none d-md-block">
-                    <a class="nav-link" href="#">NEW RELEASES</a>
-                  </li>
-                  <li class="nav-item mx-4 d-none d-md-block">
-                    <a class="nav-link" href="#">DISCOVER</a>
-                  </li>
-                  
-                </ul>
-              </div>
-            </nav>
-          
-          <div class="container throwback mt-5 px-0">
-          <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">#THROWBACKTHURSDAY</h1>    
-          <div class="row mt-3">
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Karaoke
-              </h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Liricisti
-              </h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Italy's Frequent rotations
-              </h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                00s Italy
-              </h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Cocktail Hour
-              </h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
-              <h6
-                style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                I Love My 90's Hip-Hop
-              </h6>
+              <div><a class=" btn-block btn-outline-light mb-3" id="homepage-Login" href="login.html">Login</a> </div>
+              <p class="small text-center text-secondary">
+                Cookie | Privacy | Policy
+              </p>
             </div>
           </div>
         </div>
-      
-      <!--------------CLASSIFICHE------------------>
-      <div class="container classifiche mt-5 mb-5 px-0">
-        <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche</h1>    
-          <div class="row mt-3">
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
-              
-              <h6
-                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Top 50 - Italy
-              </h6>
+
+      </div>
+      <div class="col col-10">
+        <!-- all the main content -->
+        <nav class="navbar navbar-expand navbar-dark mt-5">
+          <div class="collapse navbar-collapse mb-4" id="navbarText">
+            <ul class="navbar-nav nav nav-tabs nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link " id="pills-trending-tab" data-toggle="pill" href="#pills-trending" role="tab"
+                  aria-controls="pills-trending" aria-selected="true">TRENDING <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-4 d-md-block">
+                <a class="nav-link" id="pills-podcast-tab" data-toggle="pill" href="#pills-podcast" role="tab"
+                  aria-controls="pills-podcast" aria-selected="false">PODCAST</a>
+              </li>
+              <li class="nav-item mx-4 d-none d-md-block">
+                <a class="nav-link" id="pills-moods-tab" data-toggle="pill" href="#pills-moods" role="tab"
+                  aria-controls="pills-moods" aria-selected="false">MOODS AND GENRES</a>
+              </li>
+              <li class="nav-item mx-4 d-none d-md-block">
+                <a class="nav-link" id="pills-newRelease-tab" data-toggle="pill" href="#pills-newRelease" role="tab"
+                  aria-controls="pills-newRelease" aria-selected="false">NEW RELEASES</a>
+              </li>
+              <li class="nav-item mx-4 d-none d-md-block">
+                <a class="nav-link" id="pills-discover-tab" data-toggle="pill" href="#pills-discover" role="tab"
+                  aria-controls="pills-discover" aria-selected="false">DISCOVER</a>
+              </li>
+            </ul>
+
+        </nav>
+        <div class="container tabpanel">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-trending" role="tabpanel"
+              aria-labelledby="pills-trending-tab">
+              <div class="container-fluid throwback mt-5 px-0">
+                <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">
+                  #THROWBACKTHURSDAY
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                      class=" text-center mt-2 text-white px-4">
+                      Karaoke
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 ">
+                    <img class="images" style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                      class=" text-center mt-2 text-white px-4">
+                      Liricisti
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Italy's Frequent rotations
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img class="images" style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      00s Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Cocktail Hour
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img class="images" style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      I Love My 90's Hip-Hop
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------CLASSIFICHE------------------>
+              <div class="container-fluid classifiche mt-5 mb-5 px-0">
+                <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2 items-container">
+                    <img class="images" style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Italy
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
-              
-              <h6
-                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Top 50 - Global
-              </h6>
+            <div class="tab-pane fade" id="pills-podcast" role="tabpanel" aria-labelledby="pills-podcast-tab">
+              <div class="container-fluid throwback mt-5 px-0">
+                <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">
+                  #TOPPODCASTS
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Karaoke
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Liricisti
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Italy's Frequent rotations
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      00s Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Cocktail Hour
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      I Love My 90's Hip-Hop
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------CLASSIFICHE------------------>
+              <div class="container-fluid classifiche mt-5 mb-5 px-0">
+                <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Italy
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
-              
-              <h6
-                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Viral 50 - Global
-              </h6>
+            <div class="tab-pane fade" id="pills-moods" role="tabpanel" aria-labelledby="pills-moods-tab">
+              <div class="container-fluid throwback mt-5 px-0">
+                <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">
+                  #MOODS AND GENRES
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Karaoke
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Liricisti
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Italy's Frequent rotations
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      00s Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Cocktail Hour
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      I Love My 90's Hip-Hop
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------CLASSIFICHE------------------>
+              <div class="container-fluid classifiche mt-5 mb-5 px-0">
+                <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Italy
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 px-2">
-              <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
-              
-              <h6
-                style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;""
-                class="text-center mt-2 text-white px-4"
-              >
-                Viral 50 - Italy
-              </h6>
-            </div> 
+            <div class="tab-pane fade" id="pills-newRelease" role="tabpanel" aria-labelledby="pills-newRelease-tab">
+              <div class="container-fluid throwback mt-5 px-0">
+                <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">
+                  #NEW RELEASES
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Karaoke
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Liricisti
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Italy's Frequent rotations
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      00s Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Cocktail Hour
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      I Love My 90's Hip-Hop
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------CLASSIFICHE------------------>
+              <div class="container-fluid classifiche mt-5 mb-5 px-0">
+                <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Italy
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-discover" role="tabpanel" aria-labelledby="pills-discover-tab">
+              <div class="container-fluid throwback mt-5 px-0">
+                <h1 style="color: white; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.06rem">
+                  #DISCOVER
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/karaoke.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Karaoke
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/liricisti.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;""
+                    class=" text-center mt-2 text-white px-4">
+                      Liricisti
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/alta-rotazione.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Italy's Frequent rotations
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/00s-italia.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      00s Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/aperitivo-time.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Cocktail Hour
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/90s-hip-hop.jpg" alt="" />
+                    <h6 style="opacity: 0.8; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      I Love My 90's Hip-Hop
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--------------CLASSIFICHE------------------>
+              <div class="container-fluid classifiche mt-5 mb-5 px-0">
+                <h1 style="color: white; font-size: 2.2rem; font-weight: 600; letter-spacing: 0.06rem">Classifiche
+                </h1>
+                <div class="row mt-3">
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Italy
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/top-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Top 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-global.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - Global
+                    </h6>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 px-2">
+                    <img style="width: 100%" src="./home-page/viral-50-italy.jpg" alt="" />
+
+                    <h6 style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                      class=" text-center mt-2 text-white px-4">
+                      Viral 50 - heloooo
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------------MUSIC PLAYER----------------->
+        <div class="fixed-bottom mt-5" style="background-color: rgb(51, 51, 51)">
+          <div class="col-12 d-flex justify-content-center justify-content-lg-between">
+            <!-- <div class="d-none d-lg-block "> -->
+            <div style="width: 30%;" class="music-playing d-flex  mtm-3">
+              <img class="my-auto" style="width: 11%; height: 85%; box-shadow: 0px 0px 7px 1px black;"
+                src="./artist-page/hybrid-theory.jpg" alt="">
+              <span class="ml-2 my-auto">
+                <h6 style="font-size: 0.8rem;">In The End </h6>
+                <p style="opacity: 0.6; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.06rem;"
+                  class=" text-white mt-n1">Linkin park</p>
+              </span>
+              <ion-icon class="my-auto ml-4 text-light" name="heart-outline"></ion-icon>
+              <ion-icon class="my-auto ml-3 text-light" name="albums-outline"></ion-icon>
+            </div>
+            <!-- </div> -->
+
+            <div class="buttons my-auto">
+              <ion-icon class="icons-player" name="shuffle-outline"></ion-icon>
+              <ion-icon class="icons-player" name="play-skip-back"></ion-icon>
+              <ion-icon class="icons-player" id="play-button" name="play-circle-outline"></ion-icon>
+              <ion-icon class="icons-player" name="play-skip-forward"></ion-icon>
+              <ion-icon class="icons-player" name="repeat-outline"></ion-icon>
+            </div>
+            <div style="width: 30%;" class="right buttons d-flex mt-3 justify-content-end">
+              <ion-icon class="my-auto text-light" style="height: 25%; width: 5%;" name="list-outline"></ion-icon>
+              <ion-icon class="my-auto text-light" style="height: 20%; width: 5%;" name="desktop-outline"></ion-icon>
+              <ion-icon class="my-auto text-light" style="height: 30%; width: 5%;" name="volume-medium-outline">
+              </ion-icon>
+              <div class="my-auto rounded" style="height: 0.3rem; width: 15%; background-color: rgb(199, 199, 199);">
+              </div>
+            </div>
           </div>
       </div>
         <!-----------------MUSIC PLAYER----------------->
@@ -305,23 +637,22 @@
                 
               </div>
         </div>
+
     </div>
-    <!---------------------------SCRIPTS-------------------------------->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  </body>
+  </div>
+
+  <!---------------------------SCRIPTS-------------------------------->
+  <script src="sidebar.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
 </html>
