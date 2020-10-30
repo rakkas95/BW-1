@@ -195,7 +195,6 @@
   #sidebar {
     display: none !important;
   }
-
 }
 
 @media (max-width: 766px) {
@@ -291,21 +290,21 @@
 }
 
 #artist-play {
-text-transform: uppercase;
-max-width: 130px!important;
-height: 40px;
-position: absolute;
-top: 0;
-left: -20px;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0;
-border-radius: 500px;
-background-color: #1db954;
-z-index: 11;
-color: #fff;
-border: none;
+  text-transform: uppercase;
+  max-width: 130px !important;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 500px;
+  background-color: #1db954;
+  z-index: 11;
+  color: #fff;
+  border: none;
 }
 
 #artist-follow:hover {
@@ -313,22 +312,22 @@ border: none;
 }
 
 #artist-follow {
-border-radius: 500px;
-font-weight: 600;
-font-size: 12px;
-border: 2px solid #fff;
-text-transform: uppercase;
-width: 150px!important;
-height: 40px;
-position: relative;
-top: 0;
-left: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: transparent;
-z-index: 10;
-padding: 0 16px;
+  border-radius: 500px;
+  font-weight: 600;
+  font-size: 12px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  width: 150px !important;
+  height: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+  padding: 0 16px;
 }
 
 #ellipsis:hover {
@@ -341,7 +340,7 @@ padding: 0 16px;
   font-size: 12px;
   border: 2px solid #fff;
   text-transform: uppercase;
-  max-width: 50px!important;
+  max-width: 50px !important;
   height: 40px;
   position: absolute;
   top: 0;
@@ -419,4 +418,9 @@ input:not(:placeholder-shown) {
   width: 19%;
   height: 9vh;
   border-radius: 50%;
+}
+
+/* Library container */
+.container.library {
+  margin-top: 10%;
 }
