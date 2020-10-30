@@ -7,8 +7,7 @@
 }
 
 /* USE THE ARTIST PAGE ID */
-
-/* #show_bg::before {
+.main-artist::before {
   content: "";
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -17,30 +16,43 @@
     rgba(255, 255, 255, 0) 100%
   );
   position: absolute;
-  top: 100px;
+  top: 250px;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 200px;
+  height: 350px;
   z-index: 6;
 }
 
-#show_bg {
+.main-artist {
   background-image: url(./artist-page/linkin-banner-image.jpg);
   width: 100%;
-  height: 300px;
+  height: 600px;
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-*/
-/* .title-block {
+
+#bring-forward {
+  z-index: 10;
+}
+
+.title-block {
   max-width: 380px;
   position: relative;
   top: 45%;
-} */
+}
+
+#h6-banner {
+  margin-top: 30%;
+  margin-bottom: 0;
+}
+
+.btn-container {
+  margin-top: 5%;
+}
 
 #home-page {
   width: 100%;
@@ -60,6 +72,8 @@
   font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
+  z-index: 7;
+  margin-top: 10%;
 }
 
 .nav-link {
@@ -148,6 +162,7 @@
   padding: 0.5rem 2.5rem;
   border-radius: 500px;
   background-color: #1db954;
+  z-index: 7;
 }
 
 @media (max-width: 400px) {
@@ -170,7 +185,7 @@
 }
 
 .text-muted {
-  color: #9e9e9e !important;
+  color: #b8b8b8 !important;
 }
 
 .track {
@@ -216,8 +231,7 @@
 }
 
 #artist-page {
-  background: rgb(70, 70, 70);
-  background: linear-gradient(162deg, rgb(44, 44, 44) 0%, rgb(19, 19, 19) 40%);
+  background: rgb(0, 0, 0);
 }
 
 .row.artist {
@@ -244,11 +258,11 @@
   height: 2rem;
 }
 
-.buttons {
-  width: 30%%;
-}
-
 .right-buttons {
   width: 30%;
   margin-right: 20%;
+}
+
+#main-covers {
+  margin-top: 10%;
 }
