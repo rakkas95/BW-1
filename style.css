@@ -474,7 +474,7 @@ img.images:hover {
 }
 
 main {
-  animation: transitionIn 0.75s;
+  animation: transitionIn 0.95s;
 }
 
 @keyframes transitionIn {
